@@ -1,5 +1,5 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div>Content Not Found</div>
+  <div>Main Menu</div>
 </template>

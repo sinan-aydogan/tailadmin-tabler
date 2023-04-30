@@ -1,11 +1,5 @@
+<script setup lang="ts"></script>
+
 <template>
-  Something went wrong on the server.
+  <div>Something went wrong on the server.</div>
 </template>
-
-<script setup>
-
-</script>
-
-<style scoped>
-
-</style>

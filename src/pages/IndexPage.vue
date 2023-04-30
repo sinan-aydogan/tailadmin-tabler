@@ -1,15 +1,5 @@
+<script setup lang="ts"></script>
+
 <template>
-  <div>
-    <h1>Home Page</h1>
-  </div>
+  <div>Main Page</div>
 </template>
-
-<script>
-export default {
-  name: "HomePage"
-}
-</script>
-
-<style scoped>
-
-</style>

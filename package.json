@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@tabler/icons-vue": "^2.17.0",
+    "@vueuse/core": "^10.1.0",
     "vue": "^3.2.47"
   },
   "devDependencies": {

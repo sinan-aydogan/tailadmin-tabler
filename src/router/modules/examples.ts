@@ -1,4 +1,4 @@
-export default [
+const routes = [
   {
     path: '/empty-page',
     component: () => import('@/layouts/HorizontalLayout.vue'),
@@ -10,3 +10,5 @@ export default [
     ]
   }
 ]
+
+export default routes

@@ -1,8 +1,8 @@
 <script setup>
 defineProps({
   icon: {
-    type: String,
-    required: true
+    type: Function,
+    required: false
   },
   iconColor: {
     type: String,

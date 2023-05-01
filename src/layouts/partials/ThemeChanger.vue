@@ -1,5 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+/*Icons*/
+import {IconMoon} from '@tabler/icons-vue'
+</script>
 
 <template>
-  <div>Theme Changer</div>
+  <div>
+    <IconMoon :size="20"/>
+  </div>
 </template>

@@ -1,5 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+/*Icons*/
+import {IconBell} from '@tabler/icons-vue'
+</script>
 
 <template>
-  <div>Notification Point</div>
+  <div>
+
+    <IconBell :size="20"/>
+  </div>
 </template>

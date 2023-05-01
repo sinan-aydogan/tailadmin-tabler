@@ -1,5 +1,14 @@
-<script setup lang="ts"></script>
+<script>
+import {defineComponent} from "vue";
+import TAvatar from "@/components/avatar/TAvatar.vue";
+
+export default defineComponent({
+  components: {TAvatar}
+})
+</script>
 
 <template>
-  <div>User Menu</div>
+  <div>
+    <t-avatar/>
+  </div>
 </template>

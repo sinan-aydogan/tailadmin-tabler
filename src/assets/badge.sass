@@ -1,0 +1,24 @@
+$colors : ('blue', 'sky', 'indigo', 'purple', 'pink', 'red', 'orange', 'yellow', 'emerald', 'green', 'teal', 'cyan')
+$sizes: ('sm': 'text-xs', 'md': 'text-lg', 'lg': 'text-xl')
+
+.badge
+  @apply inline-block px-2 py-0.5 font-bold leading-none
+
+// Solid
+@each $color in $colors
+  .badge.solid-#{$color}
+    @apply bg-#{$color}-500 text-white
+
+// Soft
+@each $color in $colors
+  .badge.soft-#{$color}
+    @apply bg-#{$color}-300/25 text-#{$color}-600
+
+// Border
+@each $color in $colors
+  .badge.outline-#{$color}
+    @apply bg-transparent border border-#{$color}-600 text-#{$color}-600
+
+@each $size, $style in $sizes
+  .badge.size-#{$size}
+    @apply #{$style}

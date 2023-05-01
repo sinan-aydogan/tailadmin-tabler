@@ -1,0 +1,7 @@
+$sizes: ('sm', 'md', 'lg', 'full')
+
+//All corners
+@each $size in $sizes
+  .radius-#{$size}
+    @apply rounded-#{$size}
+

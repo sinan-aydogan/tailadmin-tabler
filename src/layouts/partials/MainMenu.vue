@@ -6,7 +6,7 @@ const mainMenuStore = useMainMenuStore()
 </script>
 
 <template>
-  <div class="flex h-14 py-1 border-b">
+  <div class="flex flex-shrink-0 h-14 py-1 border-b bg-white">
     <!--Menu-->
     <div class="flex flex-grow lg:max-w-7xl mx-auto px-2.5 justify-between items-center">
       <div>

@@ -2,7 +2,7 @@
 import { IconChevronDown } from '@tabler/icons-vue'
 import { ref } from 'vue'
 import { onClickOutside } from '@vueuse/core'
-import MainMenuSubItems from "@/layouts/partials/MainMenuSubItems.vue";
+import MainMenuSubItems from '@/layouts/partials/MainMenuSubItems.vue'
 
 defineProps({
   link: {

@@ -1,12 +1,28 @@
 <script setup lang="ts">
 defineProps({
+  radius: {
+    type: String,
+    default: 'md'
+  },
+  size: {
+    type: String,
+    default: 'sm'
+  },
+  color: {
+    type: String,
+    default: 'blue'
+  },
+  design: {
+    type: String,
+    default: 'solid'
+  },
   icon: {
     type: Function,
     required: false
   },
   iconColor: {
     type: String,
-    default: '#1D273B'
+    default: ''
   },
   iconSize: {
     type: Number,
@@ -25,10 +41,13 @@ defineProps({
 
 <template>
   <button
-    class="flex flex-row px-4 py-2 gap-2 border rounded p-1 text-sm"
-    :class="{
-      'flex-row-reverse': rightIcon
-    }"
+    class="button"
+    :class="[
+      { 'flex-row-reverse': rightIcon },
+      `radius-${radius}`,
+      `${design}-${color}`,
+      `size-${size}`
+    ]"
   >
     <component
       v-if="icon"

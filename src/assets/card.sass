@@ -1,0 +1,7 @@
+$changeColors: ('blue', 'sky', 'indigo', 'purple', 'pink', 'red', 'orange', 'yellow', 'emerald', 'green', 'teal', 'cyan', 'gray')
+.card
+  @apply flex flex-col bg-white px-6 py-4 border
+
+@each $changeColor in $changeColors
+  .card .change-#{$changeColor}
+    @apply text-#{$changeColor}-500

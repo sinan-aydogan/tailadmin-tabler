@@ -14,10 +14,15 @@ $sizes: ('sm': 'text-xs', 'md': 'text-lg', 'lg': 'text-xl')
   .badge.soft-#{$color}
     @apply bg-#{$color}-300/25 text-#{$color}-600
 
-// Border
+// Outline
 @each $color in $colors
   .badge.outline-#{$color}
     @apply bg-transparent border border-#{$color}-600 text-#{$color}-600
+
+// Light Outline
+@each $color in $colors
+  .badge.light-outline-#{$color}
+    @apply bg-transparent border border-#{$color}-200 hover:border-#{$color}-400 text-#{$color}-600
 
 @each $size, $style in $sizes
   .badge.size-#{$size}

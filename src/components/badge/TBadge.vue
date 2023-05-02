@@ -12,7 +12,7 @@ const props = defineProps({
     type: String,
     default: 'blue'
   },
-  style: {
+  design: {
     type: String,
     default: 'solid'
   }
@@ -20,7 +20,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <span class="badge" :class="[`radius-${radius}`, `${style}-${color}`, `size-${size}`]">
+  <span class="badge" :class="[`radius-${radius}`, `${design}-${color}`, `size-${size}`]">
     <slot></slot>
   </span>
 </template>

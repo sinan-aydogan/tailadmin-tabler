@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import {RouterView} from 'vue-router'
-import HeaderArea from './partials/HeaderArea.vue';
-import FooterArea from './partials/FooterArea.vue';
-import MainMenu from "./partials/MainMenu.vue";
+import { RouterView } from 'vue-router'
+import HeaderArea from './partials/HeaderArea.vue'
+import FooterArea from './partials/FooterArea.vue'
+import MainMenu from './partials/MainMenu.vue'
 
 /*Icons*/
-import {IconHeart, IconBrandGithub} from "@tabler/icons-vue";
-import TButton from "@/components/button/TButton.vue";
+import { IconHeart, IconBrandGithub } from '@tabler/icons-vue'
+import TButton from '@/components/button/TButton.vue'
 </script>
 
 <template>
@@ -16,7 +16,7 @@ import TButton from "@/components/button/TButton.vue";
       <t-button :icon="IconHeart" icon-color="#D6336C">Sponsor</t-button>
     </template>
   </HeaderArea>
-  <MainMenu/>
-  <RouterView/>
-  <FooterArea/>
+  <MainMenu />
+  <RouterView />
+  <FooterArea />
 </template>

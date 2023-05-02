@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import {useMainMenuStore} from '@/stores/mainMenu';
-import MainMenuItem from "@/layouts/partials/MainMenuItem.vue";
+import { useMainMenuStore } from '@/stores/mainMenu'
+import MainMenuItem from '@/layouts/partials/MainMenuItem.vue'
 
-const mainMenuStore = useMainMenuStore();
+const mainMenuStore = useMainMenuStore()
 </script>
 
 <template>
@@ -15,7 +15,7 @@ const mainMenuStore = useMainMenuStore();
 
         <ul class="flex">
           <li v-for="link in mainMenuStore.links" v-bind="link" class="flex">
-            <MainMenuItem :link="link"/>
+            <MainMenuItem :link="link" />
           </li>
         </ul>
 

@@ -1,10 +1,10 @@
 <script setup lang="ts">
 /*Icons*/
-import {IconMoon} from '@tabler/icons-vue'
+import { IconMoon } from '@tabler/icons-vue'
 </script>
 
 <template>
   <div>
-    <IconMoon :size="20"/>
+    <IconMoon :size="20" />
   </div>
 </template>

@@ -8,7 +8,7 @@ import UserMenu from '@/layouts/partials/UserMenu.vue'
     <div class="flex flex-grow lg:max-w-7xl px-2.5 mx-auto justify-between items-center">
       <!--Logo-->
       <div class="flex items-center gap-2 font-bold text-xl">
-        <img alt="logo" src="@/assets/logo.png" class="h-8 w-8 rounded">
+        <img alt="logo" src="@/assets/logo.png" class="h-8 w-8 rounded" />
         ta tabler
       </div>
       <!--Left Slot-->
@@ -19,11 +19,11 @@ import UserMenu from '@/layouts/partials/UserMenu.vue'
         <!--Right Slot-->
         <slot name="right"></slot>
         <!--Theme Changer-->
-        <theme-changer/>
+        <theme-changer />
         <!--Notification Point-->
-        <notification-point/>
+        <notification-point />
         <!--User Menu-->
-        <user-menu/>
+        <user-menu />
       </div>
     </div>
   </div>

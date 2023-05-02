@@ -17,7 +17,7 @@ let routes = [
 /*Dynamic generated routes*/
 const modules: any = import.meta.glob('./modules/*.ts', { eager: true })
 for (const path in modules) {
-  if(modules[path].routes){
+  if (modules[path].routes) {
     routes = [...routes, ...modules[path].routes]
   }
 }

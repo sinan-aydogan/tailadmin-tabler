@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 const props = defineProps({
   radius: {
     type: String,
@@ -21,11 +20,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <span class="badge" :class="[
-      `radius-${radius}`,
-      `${style}-${color}`,
-      `size-${size}`,
-  ]">
+  <span class="badge" :class="[`radius-${radius}`, `${style}-${color}`, `size-${size}`]">
     <slot></slot>
   </span>
 </template>

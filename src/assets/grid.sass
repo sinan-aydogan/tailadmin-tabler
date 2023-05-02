@@ -1,0 +1,12 @@
+$cols: (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)
+$sizes: ('sm': 'sm', 'md': 'md', 'lg': 'lg', 'xl': 'xl', 'xxl': '2xl')
+$gaps: (2, 4, 6, 8, 10, 12, 14, 16, 20, 24, 28, 32)
+
+@each $size, $sizeClass in $sizes
+  @each $col in $cols
+    .#{$size}-grid-cols-#{$col}
+      @apply #{$sizeClass}:grid-cols-#{$col}
+
+@each $gap in $gaps
+    .grid-gap-#{$gap}
+        @apply gap-#{$gap}
